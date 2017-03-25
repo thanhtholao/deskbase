@@ -9,7 +9,7 @@ RUN bash -c 'echo "deb http://ftp.debian.org/debian/ jessie-backports  main" >> 
    #pepperflashplugin-nonfree;\
    mkdir -p /tmp/root;\
    cd /tmp/root;\
-   wget https://fpdownload.adobe.com/pub/flashplayer/pdc/25.0.0.127/flash_player_ppapi_linux.x86_64.tar.gz -O flash_player_ppapi_linux.x86_64.tar.gz
+   wget https://fpdownload.adobe.com/pub/flashplayer/pdc/25.0.0.127/flash_player_ppapi_linux.x86_64.tar.gz -O flash_player_ppapi_linux.x86_64.tar.gz;\
    tar -xzf flash_player_ppapi_linux.x86_64.tar.gz;\
    cp libpepflashplayer.so /usr/lib/chromium/plugins/libpepflashplayer.so';\
    flashso="/usr/lib/chromium/plugins/libpepflashplayer.so";\
