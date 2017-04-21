@@ -6,7 +6,7 @@ echo "deb http://ftp.debian.org/debian/ jessie-backports  main" >> /etc/apt/sour
 echo "deb http://ftp.de.debian.org/debian jessie main contrib" >>  /etc/apt/sources.list;
 dpkg --add-architecture i386;
 apt-get update -y;
-DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends ntp ttf-mscorefonts-installer wget curl lxde obmenu nemo \
+DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends ntp xfonts-intl-japanese xfonts-intl-chinese ttf-mscorefonts-installer wget curl lxde obmenu nemo \
    chromium  chromium-l10n libreoffice cups samba vsftpd okular libqt5gui5 tightvncserver gimp  sshfs nautilus-share vlc gwenview autocutsel pulseaudio \
    pavucontrol pulseaudio-utils vinagre alsa-utils libasound2 libasound2-plugins x11-xserver-utils supervisor openssh-server git;
 mkdir -p /tmp/root;
